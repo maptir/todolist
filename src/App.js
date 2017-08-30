@@ -6,6 +6,7 @@ import Content from './containers/Content';
 class App extends Component {
   constructor(props) {
     super(props);
+    console.log(localStorage.getItem('todos'))
     this.state = {
       text: '',
       todos: JSON.parse(localStorage.getItem('todos')) || []
